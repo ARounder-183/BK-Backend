@@ -5,7 +5,8 @@
 
 # blueapps requirement
 redis==3.5.3
-pymysql==1.1.1
+# pymysql==1.1.1
+pymysql==1.0.2
 Django==3.2.15
 celery==4.4.0
 eventlet==0.33.3
