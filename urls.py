@@ -25,4 +25,5 @@ urlpatterns = [
     re_path(r"^account/", include("blueapps.account.urls")),
     
     re_path(r"^i18n/", include("django.conf.urls.i18n")),
+    re_path(r'^', include('home_application.urls')),
 ]
