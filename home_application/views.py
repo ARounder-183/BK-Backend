@@ -10,5 +10,5 @@ def hello(request):
 def get_biz_data(request):
     client = get_client_by_request(request)
     kwargs = {'bk_biz_id': 1}
-    result = client.api.list_biz_hosts(kwargs)
+    result = client.cc.list_biz_hosts(kwargs)
     return JsonResponse(result)
