@@ -9,10 +9,6 @@ def hello(request):
 
 def get_biz_data(request):
     client = get_client_by_request(request)
-    kwargs = {"page": {
-        "start": 0,
-        "limit": 20,
-        "enable_count": True
-    }}
-    result = client.api.list_bussiness_set(kwargs)
+    kwargs = {'bk_biz_id': 1}
+    result = client.api.list_biz_hosts(kwargs)
     return JsonResponse(result)
